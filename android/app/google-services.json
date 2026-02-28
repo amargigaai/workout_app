@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964391132757",
+    "project_id": "minutes-workout-app-87e2f",
+    "storage_bucket": "minutes-workout-app-87e2f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964391132757:android:c116bb3d5ec85280603edc",
+        "android_client_info": {
+          "package_name": "com.workout7min.workout_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEgAYE0Yr_C-5ujAPj3C0T61tjHg3EzLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
