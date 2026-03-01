@@ -3,8 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'config/routes.dart';
 import 'config/theme.dart';
 import 'providers/settings_provider.dart';
-import 'screens/auth/login_screen.dart';
-import 'screens/auth/register_screen.dart';
 import 'screens/home/home_screen.dart';
 import 'screens/onboarding/health_connect_screen.dart';
 import 'screens/onboarding/profile_setup_screen.dart';
@@ -34,8 +32,6 @@ class WorkoutApp extends ConsumerWidget {
       initialRoute: AppRoutes.welcome,
       routes: {
         AppRoutes.welcome: (_) => const WelcomeScreen(),
-        AppRoutes.login: (_) => const LoginScreen(),
-        AppRoutes.register: (_) => const RegisterScreen(),
         AppRoutes.profileSetup: (_) => const ProfileSetupScreen(),
         AppRoutes.healthConnect: (_) => const HealthConnectScreen(),
         AppRoutes.home: (_) => const MainShell(),

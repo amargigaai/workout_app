@@ -82,14 +82,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 children: [
                   ElevatedButton(
                     onPressed: () =>
-                        Navigator.pushReplacementNamed(context, AppRoutes.register),
+                        Navigator.pushReplacementNamed(context, AppRoutes.home),
                     child: const Text('Get Started'),
-                  ),
-                  const SizedBox(height: 12),
-                  OutlinedButton(
-                    onPressed: () =>
-                        Navigator.pushReplacementNamed(context, AppRoutes.login),
-                    child: const Text('I Already Have an Account'),
                   ),
                 ],
               ),

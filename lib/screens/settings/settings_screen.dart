@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../config/routes.dart';
-import '../../providers/auth_provider.dart';
 import '../../providers/settings_provider.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -126,31 +125,6 @@ class SettingsScreen extends ConsumerWidget {
                 ),
               ),
               const SizedBox(height: 16),
-
-              // Account
-              _SectionHeader(title: 'Account'),
-              Card(
-                child: Column(
-                  children: [
-                    ListTile(
-                      leading: const Icon(Icons.logout),
-                      title: const Text('Sign Out'),
-                      onTap: () async {
-                        final authService = ref.read(authServiceProvider);
-                        await authService.signOut();
-                        if (context.mounted) {
-                          Navigator.pushNamedAndRemoveUntil(
-                            context,
-                            AppRoutes.welcome,
-                            (route) => false,
-                          );
-                        }
-                      },
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 32),
 
               // App info
               Center(
